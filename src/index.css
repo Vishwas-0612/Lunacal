@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+  height: 6px; /* Height (for horizontal scrollbars) */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Make the track invisible */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a5055; /* Color of the scroll thumb (from your HelpIcon) */
+  border-radius: 10px; /* Roundness of the scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6f767e; /* A slightly lighter color on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4a5055 transparent; /* thumb and track */
+}
